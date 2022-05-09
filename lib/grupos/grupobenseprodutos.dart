@@ -35,7 +35,7 @@ class GrupoProducaoBenseProdutos extends StatelessWidget {
                 'Produção, Bens e Produtos',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Color.fromARGB(255, 0, 22, 39),
+                  color: Color.fromARGB(255, 5, 93, 160),
                   fontSize: 20,
                   fontWeight: FontWeight.w800,
                   shadows: <Shadow>[

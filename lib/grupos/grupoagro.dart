@@ -38,12 +38,12 @@ class GrupoAgro extends StatelessWidget {
                 'Produção Agrícola e Implementos',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  color: Color.fromARGB(255, 0, 70, 128),
+                  color: Color.fromARGB(255, 0, 64, 116),
                   fontSize: 20,
                   fontWeight: FontWeight.w800,
                   shadows: <Shadow>[
                     Shadow(
-                      offset: Offset(1.0, 1.0),
+                      offset: Offset(2.0, 2.0),
                       blurRadius: 3.0,
                       color: Color.fromARGB(255, 255, 255, 255),
                     ),

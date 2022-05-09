@@ -10,10 +10,10 @@ import 'package:primeiro_projeto/pages/galeseguros/galeseguros.dart';
 import 'package:primeiro_projeto/pages/mediaquery/mediaquery.dart';
 import 'package:primeiro_projeto/pages/rows_columns/rows_columns_page.dart';
 import 'package:device_preview/device_preview.dart';
-
 import 'pages/layout_builder/layout_builder_page.dart';
 import 'pages/scroll/listview.dart';
 import 'pages/scroll/singlechildscrollpage.dart';
+import 'package:flutter/material.dart';
 
 void main() {
   runApp(
