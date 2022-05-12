@@ -5,9 +5,9 @@ class GrupoMedicos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // padding: EdgeInsets.all(30),
-      width: MediaQuery.of(context).size.width * 0.60,
-      height: 300,
+      padding: EdgeInsets.all(10),
+      width: MediaQuery.of(context).size.width * 0.95,
+      height: 250,
 
       decoration: const BoxDecoration(
         image: DecorationImage(

@@ -6,8 +6,9 @@ class GrupoProducaoBenseProdutos extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 98 / 100,
-      height: 350,
+      padding: EdgeInsets.all(10),
+      width: MediaQuery.of(context).size.width * 0.95,
+      height: 250,
       decoration: const BoxDecoration(
         image: DecorationImage(
             image: AssetImage('assets/transporte.jpg'), fit: BoxFit.cover),

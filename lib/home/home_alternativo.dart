@@ -53,11 +53,12 @@ class HomePageAlternativa extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.stretch,
+          mainAxisSize: MainAxisSize.max,
           children: [
             SizedBox(height: 10),
             Container(
               child: Text(
-                'Bem Vindo à Gale Seguros',
+                '  Bem Vindo à Gale Seguros',
                 //textAlign: TextAlign.center,
                 style: TextStyle(
                   //color: Color.fromARGB(255, 0, 70, 128),
@@ -74,20 +75,31 @@ class HomePageAlternativa extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Text(
-                'Tecnologia e Humanização, atendendo a todos, sem limitações, sempre com a melhor qualidade, liga pra gente 16-99444-2000 - 3032-3704 ou 011-98983-6080, seja atendido por um especialista, sem precisar ficar escolhendo opções, a ligação é direta!, explique suas necessidade que teremos o prazer de encontrar a melhor solução!'),
-            Padding(
-              padding: EdgeInsets.all(10),
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(5),
+                  width: MediaQuery.of(context).size.width * 0.95,
+                  child: Text(
+                      'Tecnologia e Humanização, atendendo a todos, sem limitações, sempre com a melhor qualidade, liga pra gente 16-99444-2000 - 3032-3704 ou 011-98983-6080, seja atendido por um especialista, sem precisar ficar escolhendo opções, a ligação é direta!, explique suas necessidade que teremos o prazer de encontrar a melhor solução!'),
+                ),
+              ],
             ),
-            GrupoMedicos(),
-            SizedBox(height: 20),
-            GrupoProducaoBenseProdutos(),
-            SizedBox(height: 20),
-            GrupoEmpresa(),
-            SizedBox(height: 20),
-            GrupoAgro(),
-            SizedBox(height: 20),
-            GrupoFamilia(),
+            Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                GrupoMedicos(),
+                SizedBox(height: 20),
+                GrupoProducaoBenseProdutos(),
+                SizedBox(height: 20),
+                GrupoEmpresa(),
+                SizedBox(height: 20),
+                GrupoAgro(),
+                SizedBox(height: 20),
+                GrupoFamilia(),
+              ],
+            ),
           ],
         ),
       ),

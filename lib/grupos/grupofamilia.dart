@@ -5,6 +5,9 @@ class GrupoFamilia extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      padding: EdgeInsets.all(10),
+      width: MediaQuery.of(context).size.width * 0.95,
+      height: 300,
       decoration: const BoxDecoration(
         image: DecorationImage(
             image: AssetImage('assets/familia.jpg'), fit: BoxFit.cover),
@@ -23,8 +26,6 @@ class GrupoFamilia extends StatelessWidget {
         ],
       ),
       //color: Colors.red,
-      width: MediaQuery.of(context).size.width * 98 / 100,
-      height: 330,
 
 //*texto da primeira Caixa
       child: Column(
