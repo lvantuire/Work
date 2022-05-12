@@ -11,6 +11,7 @@ enum PopupMenuPages {
   single_scroll,
   list_view,
   home_alternativa,
+  snackbar_page,
 }
 
 class HomePage extends StatelessWidget {
@@ -100,6 +101,9 @@ class HomePage extends StatelessWidget {
                   case PopupMenuPages.home_alternativa:
                     Navigator.of(context).pushNamed('/home_alternativa');
                     break;
+                  case PopupMenuPages.snackbar_page:
+                    Navigator.of(context).pushNamed('/snackbar_page');
+                    break;
                 }
               },
 
@@ -146,7 +150,11 @@ class HomePage extends StatelessWidget {
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.home_alternativa,
                     child: Text('Home Alternativa'),
-                  )
+                  ),
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.snackbar_page,
+                    child: Text('Snacks Bar'),
+                  ),
                 ];
               })
         ],
