@@ -6,6 +6,8 @@ import 'package:primeiro_projeto/images/images.dart';
 import 'package:primeiro_projeto/pages/botoes_rotacao_texto/botoes_rotacoes_texto.dart';
 import 'package:primeiro_projeto/pages/contanier/container_page.dart';
 import 'package:primeiro_projeto/home/home_page.dart';
+import 'package:primeiro_projeto/pages/forms/forms_page.dart';
+import 'package:primeiro_projeto/pages/forms/forms_page2.dart';
 import 'package:primeiro_projeto/pages/galeseguros/galeseguros.dart';
 import 'package:primeiro_projeto/pages/mediaquery/mediaquery.dart';
 import 'package:primeiro_projeto/pages/rows_columns/rows_columns_page.dart';
@@ -53,6 +55,8 @@ class MyApp extends StatelessWidget {
         '/home_alternativa': (_) => HomePageAlternativa(),
         '/formuario_page': (_) => FormularioPage(),
         '/snackbar_page': (_) => SnackbarPage(),
+        '/forms_page': (_) => FormsPage(),
+        '/forms_page_decor': (_) => FormsPageDecor(),
       },
     );
   }

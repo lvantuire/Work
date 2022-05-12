@@ -12,6 +12,8 @@ enum PopupMenuPages {
   list_view,
   home_alternativa,
   snackbar_page,
+  forms_page,
+  forms_page_decor,
 }
 
 class HomePage extends StatelessWidget {
@@ -104,6 +106,12 @@ class HomePage extends StatelessWidget {
                   case PopupMenuPages.snackbar_page:
                     Navigator.of(context).pushNamed('/snackbar_page');
                     break;
+                  case PopupMenuPages.forms_page:
+                    Navigator.of(context).pushNamed('/forms_page');
+                    break;
+                  case PopupMenuPages.forms_page_decor:
+                    Navigator.of(context).pushNamed('/forms_page_decor');
+                    break;
                 }
               },
 
@@ -154,6 +162,14 @@ class HomePage extends StatelessWidget {
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.snackbar_page,
                     child: Text('Snacks Bar'),
+                  ),
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.forms_page,
+                    child: Text('Formulários'),
+                  ),
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.forms_page_decor,
+                    child: Text('Form Decor'),
                   ),
                 ];
               })
