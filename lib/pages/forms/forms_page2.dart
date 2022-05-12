@@ -8,6 +8,7 @@ class FormsPageDecor extends StatefulWidget {
 class _FormsPageStateDecor extends State<FormsPageDecor> {
   final formKey = GlobalKey<FormState>();
   final nameEC = TextEditingController();
+  final senhaEC = TextEditingController();
 
   @override
   void dispose() {
@@ -51,6 +52,10 @@ class _FormsPageStateDecor extends State<FormsPageDecor> {
                   maxLines: null, //? COLOCA NULL PARA IR BAIXANDO AS LINHAS
                   decoration: InputDecoration(
                     labelText: 'Nome Completo',
+                    //labelStyle: TextStyle(
+                    //fontSize: 10,
+                    //color: Colors.orange,
+                    //    ),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(30),
                     ),
@@ -60,6 +65,78 @@ class _FormsPageStateDecor extends State<FormsPageDecor> {
                       return 'Campo X não preenchido';
                     }
                   },
+                ),
+
+                SizedBox(
+                  height: 10,
+                ),
+
+                //Exemplo de campo para senha
+                TextFormField(
+                  controller: senhaEC,
+                  autovalidateMode: AutovalidateMode.onUserInteraction,
+                  maxLines: 1, //? COLOCA NULL PARA IR BAIXANDO AS LINHAS
+                  decoration: InputDecoration(
+                    labelText: 'Senha',
+                    //labelStyle: TextStyle(
+                    //fontSize: 10,
+                    //color: Colors.orange,
+                    //    ),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
+                  obscureText: true,
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'Campo X não preenchido';
+                    }
+                  },
+                ),
+
+                SizedBox(
+                  height: 20,
+                ),
+
+                DropdownButtonFormField<String>(
+                  decoration: InputDecoration(
+                    isDense: true,
+                    labelText: 'Opções a escolher',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
+                  ),
+                  elevation: 10,
+                  //icon: Icon(Icons.drag_indicator_sharp),
+                  // value: 'cat1', // Já deixa como um valor padrão preenchido
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return 'necessaria uma categoria';
+                    }
+                  },
+                  onChanged: (String? newValue) {},
+                  items: [
+                    DropdownMenuItem(
+                      value: 'cat1',
+                      child: Text('Texto1'),
+                    ),
+                    DropdownMenuItem(
+                      value: 'cat2',
+                      child: Text('Texto2'),
+                    ),
+                    DropdownMenuItem(
+                      value: 'cat3',
+                      child: Text('Texto3'),
+                    ),
+                    DropdownMenuItem(
+                      value: 'cat4',
+                      child: Text('Texto4'),
+                    ),
+                    DropdownMenuItem(
+                      value: 'cat5',
+                      child: Text('Texto5'),
+                    ),
+                  ],
                 ),
 
                 ElevatedButton(
