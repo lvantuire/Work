@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class FormularioPage extends StatefulWidget {
   @override
@@ -12,6 +13,27 @@ class _FormularioPage extends State<FormularioPage> {
   final telefoneEC = TextEditingController();
   final detalhesEC = TextEditingController();
   final melhorEC = TextEditingController();
+
+  enviaForm() async {
+    final nomeForm = nameEC.text.toString();
+    final emailForm = emailEC.text.toString();
+    final telefoneForm = telefoneEC.text.toString();
+    final melhorForm = melhorEC.text.toString();
+    final detalhesForm = detalhesEC.text.toString();
+
+    final Uri params = Uri(
+      scheme: 'mailto',
+      path: 'contato@galeseguros.com.br',
+      query:
+          'subject=Contato inicial Cotacao Seguros para $nomeForm &body= $nomeForm, $emailForm, $telefoneForm, $melhorForm, $detalhesForm ',
+    );
+    String url = params.toString();
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      print('Could not launch $url');
+    }
+  }
 
   @override
   void dispose() {
@@ -254,6 +276,7 @@ class _FormularioPage extends State<FormularioPage> {
                       var formValid = formKey.currentState?.validate() ?? false;
                       var message = 'Formulário Inválido';
                       if (formValid) {
+                        enviaForm();
                         message = 'Formulario Valido (Name: ${nameEC.text})';
                       }
 

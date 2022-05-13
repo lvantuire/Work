@@ -4,9 +4,45 @@ import 'package:primeiro_projeto/grupos/grupobenseprodutos.dart';
 import 'package:primeiro_projeto/grupos/grupoempresa.dart';
 import 'package:primeiro_projeto/grupos/grupofamilia.dart';
 import 'package:primeiro_projeto/grupos/grupomedicos.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class HomePageAlternativa extends StatelessWidget {
   const HomePageAlternativa({Key? key}) : super(key: key);
+
+  abrirWhatsApp() async {
+    var whatsappUrl =
+        "whatsapp://send?phone=+5516997776229&text=Olá,tudo bem ?";
+
+    if (await canLaunch(whatsappUrl)) {
+      await launch(whatsappUrl);
+    } else {
+      throw 'Could not launch $whatsappUrl';
+    }
+  }
+
+  abrirEmail() async {
+    final Uri params = Uri(
+      scheme: 'mailto',
+      path: 'contato@galeseguros.com.br',
+      query:
+          'subject=Contato inicial Cotacao Seguros &body=Nome:                     Telefone:                Melhor Horario de Contato:          Sobre qual Produto ou assunto você gostaria de falar?:',
+    );
+    String url = params.toString();
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      print('Could not launch $url');
+    }
+  }
+
+  fazerLigacao() async {
+    const url = "tel:1630323704";
+    if (await canLaunch(url)) {
+      await launch(url);
+    } else {
+      throw 'Could not launch $url';
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +61,9 @@ class HomePageAlternativa extends StatelessWidget {
 
           actions: [
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                abrirWhatsApp();
+              },
               icon: const Icon(
                 Icons.whatsapp,
                 color: Colors.white,
@@ -33,7 +71,9 @@ class HomePageAlternativa extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                fazerLigacao();
+              },
               icon: const Icon(
                 Icons.phone,
                 color: Colors.white,
@@ -41,7 +81,9 @@ class HomePageAlternativa extends StatelessWidget {
               ),
             ),
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                abrirEmail();
+              },
               icon: const Icon(
                 Icons.email,
                 color: Colors.white,
@@ -89,7 +131,7 @@ class HomePageAlternativa extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  height: 180,
+                  height: 170,
                   width: 240,
                   alignment: Alignment.center,
                   padding: EdgeInsets.all(5),
