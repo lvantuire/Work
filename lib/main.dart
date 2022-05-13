@@ -13,6 +13,8 @@ import 'package:primeiro_projeto/pages/mediaquery/mediaquery.dart';
 import 'package:primeiro_projeto/pages/rows_columns/rows_columns_page.dart';
 import 'package:device_preview/device_preview.dart';
 import 'package:primeiro_projeto/pages/snackbar/snackbar_page.dart';
+import 'package:primeiro_projeto/pages/stack/stack_page.dart';
+import 'package:primeiro_projeto/pages/stack/stack_page2.dart';
 import 'pages/layout_builder/layout_builder_page.dart';
 import 'pages/scroll/listview.dart';
 import 'pages/scroll/singlechildscrollpage.dart';
@@ -57,6 +59,8 @@ class MyApp extends StatelessWidget {
         '/snackbar_page': (_) => SnackbarPage(),
         '/forms_page': (_) => FormsPage(),
         '/forms_page_decor': (_) => FormsPageDecor(),
+        '/stacks_page': (_) => StackPage(),
+        '/stacks2': (_) => StackPage2(),
       },
     );
   }

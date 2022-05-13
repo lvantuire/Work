@@ -14,6 +14,8 @@ enum PopupMenuPages {
   snackbar_page,
   forms_page,
   forms_page_decor,
+  stacks_page,
+  stacks2,
 }
 
 class HomePage extends StatelessWidget {
@@ -112,6 +114,12 @@ class HomePage extends StatelessWidget {
                   case PopupMenuPages.forms_page_decor:
                     Navigator.of(context).pushNamed('/forms_page_decor');
                     break;
+                  case PopupMenuPages.stacks_page:
+                    Navigator.of(context).pushNamed('/stacks_page');
+                    break;
+                  case PopupMenuPages.stacks2:
+                    Navigator.of(context).pushNamed('/stacks2');
+                    break;
                 }
               },
 
@@ -119,6 +127,14 @@ class HomePage extends StatelessWidget {
 
               itemBuilder: (BuildContext context) {
                 return <PopupMenuItem<PopupMenuPages>>[
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.stacks_page,
+                    child: Text('StackPage'),
+                  ),
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.stacks2,
+                    child: Text('StackPage2'),
+                  ),
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.container,
                     child: Text('Container child'),

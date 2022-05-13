@@ -75,20 +75,75 @@ class HomePageAlternativa extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
-            Column(
-              mainAxisSize: MainAxisSize.max,
+            Row(
               children: [
+                SizedBox(width: 20),
                 Container(
-                  padding: EdgeInsets.all(5),
-                  width: MediaQuery.of(context).size.width * 0.95,
-                  child: Text(
-                      'Tecnologia e Humanização, atendendo a todos, sem limitações, sempre com a melhor qualidade, liga pra gente 16-99444-2000 - 3032-3704 ou 011-98983-6080, seja atendido por um especialista, sem precisar ficar escolhendo opções, a ligação é direta!, explique suas necessidade que teremos o prazer de encontrar a melhor solução!'),
+                  height: 180,
+                  width: 70,
+                  //color: Colors.amber,
+                  decoration: const BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage('assets/NovoSanto.png'),
+                        fit: BoxFit.fitHeight),
+                  ),
                 ),
+                Container(
+                  height: 180,
+                  width: 240,
+                  alignment: Alignment.center,
+                  padding: EdgeInsets.all(5),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Text(
+                        'Fale com a gente',
+                        style: TextStyle(
+                            fontSize: 25, fontWeight: FontWeight.bold),
+                      ),
+                      Text(
+                        '16-99444-2000',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                      Text(
+                        '16-3032-3704',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                      Text(
+                        '011-98983-6080',
+                        style: TextStyle(
+                          fontSize: 20,
+                        ),
+                      ),
+                      Text('Seja atendido por um Especialista!!!'),
+                      Text(
+                        'Se seu Santo falhar!',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic),
+                      ),
+                      Text(
+                        'A Gale Pode Ajudar',
+                        style: TextStyle(
+                            fontSize: 15,
+                            fontWeight: FontWeight.bold,
+                            fontStyle: FontStyle.italic),
+                      ),
+                    ],
+                  ),
+                )
               ],
             ),
             Column(
               mainAxisSize: MainAxisSize.max,
               children: [
+                SizedBox(height: 10),
                 GrupoMedicos(),
                 SizedBox(height: 20),
                 GrupoProducaoBenseProdutos(),
@@ -98,6 +153,7 @@ class HomePageAlternativa extends StatelessWidget {
                 GrupoAgro(),
                 SizedBox(height: 20),
                 GrupoFamilia(),
+                SizedBox(height: 20),
               ],
             ),
           ],
