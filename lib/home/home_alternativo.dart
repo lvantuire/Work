@@ -11,7 +11,7 @@ class HomePageAlternativa extends StatelessWidget {
 
   abrirWhatsApp() async {
     var whatsappUrl =
-        "whatsapp://send?phone=+5516997776229&text=Olá,tudo bem ?";
+        "whatsapp://send?phone=+5516994442000&text=Olá,tudo bem ?";
 
     if (await canLaunch(whatsappUrl)) {
       await launch(whatsappUrl);
