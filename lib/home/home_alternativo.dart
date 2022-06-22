@@ -4,7 +4,7 @@ import 'package:primeiro_projeto/grupos/grupobenseprodutos.dart';
 import 'package:primeiro_projeto/grupos/grupoempresa.dart';
 import 'package:primeiro_projeto/grupos/grupofamilia.dart';
 import 'package:primeiro_projeto/grupos/grupomedicos.dart';
-import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class HomePageAlternativa extends StatelessWidget {
   const HomePageAlternativa({Key? key}) : super(key: key);
@@ -13,8 +13,8 @@ class HomePageAlternativa extends StatelessWidget {
     var whatsappUrl =
         "whatsapp://send?phone=+5516997776229&text=Olá,tudo bem ?";
 
-    if (await canLaunch(whatsappUrl)) {
-      await launch(whatsappUrl);
+    if (await canLaunchUrlString(whatsappUrl)) {
+      await launchUrlString(whatsappUrl);
     } else {
       throw 'Could not launch $whatsappUrl';
     }
@@ -22,14 +22,16 @@ class HomePageAlternativa extends StatelessWidget {
 
   abrirEmail() async {
     final Uri params = Uri(
-      scheme: 'mailto',
-      path: 'contato@galeseguros.com.br',
-      query:
-          'subject=Contato inicial Cotacao Seguros &body=Nome:                     Telefone:                Melhor Horario de Contato:          Sobre qual Produto ou assunto você gostaria de falar?:',
-    );
+        scheme: 'mailto',
+        path: 'contato@galeseguros.com.br',
+        query: 'subject=Contato inicial Cotacao Seguros'
+            '&body=Nome:                      '
+            'Telefone:                        '
+            'Melhor Horario de Contato:                   '
+            'Sobre qual Produto ou assunto você gostaria de falar?:');
     String url = params.toString();
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrlString(url)) {
+      await launchUrlString(url);
     } else {
       print('Could not launch $url');
     }
@@ -37,8 +39,8 @@ class HomePageAlternativa extends StatelessWidget {
 
   fazerLigacao() async {
     const url = "tel:1630323704";
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrlString(url)) {
+      await launchUrlString(url);
     } else {
       throw 'Could not launch $url';
     }

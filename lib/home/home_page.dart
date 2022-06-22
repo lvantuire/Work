@@ -16,6 +16,7 @@ enum PopupMenuPages {
   forms_page_decor,
   stacks_page,
   stacks2,
+  cidades,
 }
 
 class HomePage extends StatelessWidget {
@@ -120,6 +121,9 @@ class HomePage extends StatelessWidget {
                   case PopupMenuPages.stacks2:
                     Navigator.of(context).pushNamed('/stacks2');
                     break;
+                  case PopupMenuPages.cidades:
+                    Navigator.of(context).pushNamed('/cidades');
+                    break;
                 }
               },
 
@@ -127,6 +131,10 @@ class HomePage extends StatelessWidget {
 
               itemBuilder: (BuildContext context) {
                 return <PopupMenuItem<PopupMenuPages>>[
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.cidades,
+                    child: Text('JsonCidades'),
+                  ),
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.stacks_page,
                     child: Text('StackPage'),

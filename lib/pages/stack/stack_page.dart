@@ -23,6 +23,7 @@ class StackPage extends StatelessWidget {
             alignment: Alignment.bottomLeft,
             child: Container(
               color: Colors.pink,
+              
               width: 150,
               height: 150,
             ),
@@ -32,7 +33,7 @@ class StackPage extends StatelessWidget {
             top: 40,
             right: 40,
             child: Container(
-              color: Colors.tealAccent,
+              color: Colors.tealAccent ,
               width: 150,
               height: 150,
             ),

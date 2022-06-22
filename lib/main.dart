@@ -1,9 +1,9 @@
-//import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:primeiro_projeto/formulario/formulario.dart';
 import 'package:primeiro_projeto/home/home_alternativo.dart';
 import 'package:primeiro_projeto/images/images.dart';
 import 'package:primeiro_projeto/pages/botoes_rotacao_texto/botoes_rotacoes_texto.dart';
+import 'package:primeiro_projeto/pages/cidades/cidades_page.dart';
 import 'package:primeiro_projeto/pages/contanier/container_page.dart';
 import 'package:primeiro_projeto/home/home_page.dart';
 import 'package:primeiro_projeto/pages/forms/forms_page.dart';
@@ -61,6 +61,8 @@ class MyApp extends StatelessWidget {
         '/forms_page_decor': (_) => FormsPageDecor(),
         '/stacks_page': (_) => StackPage(),
         '/stacks2': (_) => StackPage2(),
+        '/cidades': (_) => CidadesPage(),
+
       },
     );
   }

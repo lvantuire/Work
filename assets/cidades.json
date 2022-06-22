@@ -1,0 +1,34 @@
+[
+    {
+        "cidade": "São Paulo",
+        "estado": "SP"
+    },
+    {
+        "cidade": "São Carlos",
+        "estado": "SP"
+    },
+    {
+        "cidade": "Campinas",
+        "estado": "SP"
+    },
+    
+    {
+        "cidade": "Santa Rita do P Quatro",
+        "estado": "SP"
+    },
+    
+    {
+        "cidade": "Ibate",
+        "estado": "SP"
+    },
+    
+    {
+        "cidade": "Araraquara",
+        "estado": "SP"
+    },
+    
+    {
+        "cidade": "Descalvado",
+        "estado": "SP"
+    }
+]
