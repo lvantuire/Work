@@ -59,8 +59,14 @@ class GrupoProducaoBenseProdutos extends StatelessWidget {
                 ),
               );
             },
-            icon: FaIcon(FontAwesomeIcons.truckArrowRight),
-            label: Text('Seguros Trasportes e Cargas'),
+            icon: FaIcon(
+              FontAwesomeIcons.truckArrowRight,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguros Trasportes e Cargas',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -80,8 +86,14 @@ class GrupoProducaoBenseProdutos extends StatelessWidget {
                 ),
               );
             },
-            icon: FaIcon(FontAwesomeIcons.industry),
-            label: Text('Armazenagem de Grãos'),
+            icon: FaIcon(
+              FontAwesomeIcons.industry,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Armazenagem de Grãos',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -101,8 +113,14 @@ class GrupoProducaoBenseProdutos extends StatelessWidget {
                 ),
               );
             },
-            icon: FaIcon(FontAwesomeIcons.mobileScreenButton),
-            label: Text('Seguro Celular'),
+            icon: FaIcon(
+              FontAwesomeIcons.mobileScreenButton,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Celular',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -122,8 +140,14 @@ class GrupoProducaoBenseProdutos extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.pedal_bike),
-            label: Text('Seguro Bike'),
+            icon: Icon(
+              Icons.pedal_bike,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Bike',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               minimumSize: Size(100, 30),
               primary: Colors.yellowAccent,

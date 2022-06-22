@@ -62,8 +62,14 @@ class GrupoEmpresa extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.healing),
-            label: Text('Seguros Saude Empresa'),
+            icon: Icon(
+              Icons.healing,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguros Saude Empresa',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -83,8 +89,14 @@ class GrupoEmpresa extends StatelessWidget {
                 ),
               );
             },
-            icon: FaIcon(FontAwesomeIcons.truck),
-            label: Text('Seguro Frota de Veículos'),
+            icon: FaIcon(
+              FontAwesomeIcons.truck,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Frota de Veículos',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -104,8 +116,14 @@ class GrupoEmpresa extends StatelessWidget {
                 ),
               );
             },
-            icon: FaIcon(FontAwesomeIcons.truckFast),
-            label: Text('Seguro Transporte'),
+            icon: FaIcon(
+              FontAwesomeIcons.truckFast,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Transporte',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -125,8 +143,14 @@ class GrupoEmpresa extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.engineering),
-            label: Text('Risco Engenharia'),
+            icon: Icon(
+              Icons.engineering,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Risco Engenharia',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -146,8 +170,14 @@ class GrupoEmpresa extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.build),
-            label: Text('Risco Civil Obras'),
+            icon: Icon(
+              Icons.build,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Risco Civil Obras',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,

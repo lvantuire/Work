@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:primeiro_projeto/formulario/formulario.dart';
+import 'package:primeiro_projeto/grupos/SegsGrupoMedicos/PaginaRCPMedicos.dart';
 
 class GrupoMedicos extends StatelessWidget {
   @override
@@ -52,19 +53,25 @@ class GrupoMedicos extends StatelessWidget {
             ),
           ),
 
-//************************OPCOES DA FAMILIA ******/
+//?BOTOES MEDICOS
 
           ElevatedButton.icon(
             onPressed: () {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => FormularioPage(),
+                  builder: (context) => PaginaRCPMedicos(),
                 ),
               );
             },
-            icon: Icon(Icons.medication),
-            label: Text('RCP Médicos'),
+            icon: Icon(
+              Icons.medication,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'RCP Médicos',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -85,31 +92,14 @@ class GrupoMedicos extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.healing),
-            label: Text('RCP Prof da Saude'),
-            style: ElevatedButton.styleFrom(
-              minimumSize: Size(100, 30),
-              primary: Colors.yellowAccent,
-              shadowColor: Colors.pink,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.all(
-                  Radius.circular(50),
-                ),
-              ),
+            icon: Icon(
+              Icons.healing,
+              color: Color.fromARGB(255, 0, 72, 131),
             ),
-          ),
-
-          ElevatedButton.icon(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => FormularioPage(),
-                ),
-              );
-            },
-            icon: Icon(Icons.airplanemode_active),
-            label: Text('Seguro Viagem'),
+            label: Text(
+              'RCP Prof da Saude',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               minimumSize: Size(100, 30),
               primary: Colors.yellowAccent,
@@ -131,8 +121,43 @@ class GrupoMedicos extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.pedal_bike),
-            label: Text('Seguro Bike'),
+            icon: Icon(
+              Icons.airplanemode_active,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Viagem',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
+            style: ElevatedButton.styleFrom(
+              minimumSize: Size(100, 30),
+              primary: Colors.yellowAccent,
+              shadowColor: Colors.pink,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.all(
+                  Radius.circular(50),
+                ),
+              ),
+            ),
+          ),
+
+          ElevatedButton.icon(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FormularioPage(),
+                ),
+              );
+            },
+            icon: Icon(
+              Icons.pedal_bike,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Bike',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               minimumSize: Size(100, 30),
               primary: Colors.yellowAccent,

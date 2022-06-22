@@ -64,8 +64,14 @@ class GrupoFamilia extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.car_repair),
-            label: Text('Auto'),
+            icon: Icon(
+              Icons.car_repair,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Auto',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -85,8 +91,14 @@ class GrupoFamilia extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.house),
-            label: Text('Residencial'),
+            icon: Icon(
+              Icons.house,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Residencial',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -106,8 +118,14 @@ class GrupoFamilia extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.heart_broken),
-            label: Text('Vida'),
+            icon: Icon(
+              Icons.heart_broken,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Vida',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -127,8 +145,14 @@ class GrupoFamilia extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.local_hospital),
-            label: Text('Acidentes Pessoais'),
+            icon: Icon(
+              Icons.local_hospital,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Acidentes Pessoais',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -148,8 +172,14 @@ class GrupoFamilia extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.airplanemode_active),
-            label: Text('Seguro Viagem'),
+            icon: Icon(
+              Icons.airplanemode_active,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Viagem',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,

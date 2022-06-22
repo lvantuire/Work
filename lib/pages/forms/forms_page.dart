@@ -51,6 +51,7 @@ class _FormsPageState extends State<FormsPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   }),
 
               TextFormField(
@@ -59,6 +60,7 @@ class _FormsPageState extends State<FormsPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo Y não preenchido';
                     }
+                    return null;
                   }),
 
               ElevatedButton(

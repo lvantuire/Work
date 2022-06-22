@@ -64,6 +64,7 @@ class _FormsPageStateDecor extends State<FormsPageDecor> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
 
@@ -91,6 +92,7 @@ class _FormsPageStateDecor extends State<FormsPageDecor> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
 
@@ -113,6 +115,7 @@ class _FormsPageStateDecor extends State<FormsPageDecor> {
                     if (value == null || value.isEmpty) {
                       return 'necessaria uma categoria';
                     }
+                    return null;
                   },
                   onChanged: (String? newValue) {},
                   items: [

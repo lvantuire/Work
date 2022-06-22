@@ -62,8 +62,14 @@ class GrupoAgro extends StatelessWidget {
                 ),
               );
             },
-            icon: Icon(Icons.agriculture),
-            label: Text('Tratores e Implementos'),
+            icon: Icon(
+              Icons.agriculture,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Tratores e Implementos',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -83,8 +89,14 @@ class GrupoAgro extends StatelessWidget {
                 ),
               );
             },
-            icon: FaIcon(FontAwesomeIcons.tree),
-            label: Text('Seguro da Platação'),
+            icon: FaIcon(
+              FontAwesomeIcons.tree,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro da Platação',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,
@@ -104,8 +116,14 @@ class GrupoAgro extends StatelessWidget {
                 ),
               );
             },
-            icon: FaIcon(FontAwesomeIcons.cow),
-            label: Text('Seguro Animais'),
+            icon: FaIcon(
+              FontAwesomeIcons.cow,
+              color: Color.fromARGB(255, 0, 72, 131),
+            ),
+            label: Text(
+              'Seguro Animais',
+              style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
+            ),
             style: ElevatedButton.styleFrom(
               primary: Colors.yellowAccent,
               shadowColor: Colors.pink,

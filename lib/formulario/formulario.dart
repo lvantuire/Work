@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:url_launcher/url_launcher.dart';
+//import 'package:url_launcher/url_launcher.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class FormularioPage extends StatefulWidget {
   @override
@@ -28,8 +29,8 @@ class _FormularioPage extends State<FormularioPage> {
           'subject=Contato inicial Cotacao Seguros para $nomeForm &body= $nomeForm, $emailForm, $telefoneForm, $melhorForm, $detalhesForm ',
     );
     String url = params.toString();
-    if (await canLaunch(url)) {
-      await launch(url);
+    if (await canLaunchUrlString(url)) {
+      await launchUrlString(url);
     } else {
       print('Could not launch $url');
     }
@@ -160,6 +161,7 @@ class _FormularioPage extends State<FormularioPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
 
@@ -187,6 +189,7 @@ class _FormularioPage extends State<FormularioPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
 
@@ -213,6 +216,7 @@ class _FormularioPage extends State<FormularioPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
 
@@ -238,6 +242,7 @@ class _FormularioPage extends State<FormularioPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
 
@@ -264,6 +269,7 @@ class _FormularioPage extends State<FormularioPage> {
                     if (value == null || value.isEmpty) {
                       return 'Campo X não preenchido';
                     }
+                    return null;
                   },
                 ),
 
