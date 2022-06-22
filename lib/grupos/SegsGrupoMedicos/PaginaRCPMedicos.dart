@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../galepages/funcoes.dart';
+
 class PaginaRCPMedicos extends StatelessWidget {
   const PaginaRCPMedicos({Key? key}) : super(key: key);
 
@@ -9,23 +11,16 @@ class PaginaRCPMedicos extends StatelessWidget {
       appBar: AppBar(
         title: const Text('RCP Médicos'),
       ),
-      body: Stack(children: [
-        Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/rcpmedicos.jpg'), fit: BoxFit.cover),
-          ),
-        ),
-        Stack(
-          children: [
-            Align(
-              alignment: Alignment.bottomCenter,
-              child: Container(
-                color: Colors.pink.withOpacity(0.6),
-                width: 150,
-                height: 150,
-              ),
+      body: Stack(
+        children: [
+          Container(
+            decoration: const BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage('assets/rcpmedicos.jpg'),
+                  fit: BoxFit.cover),
             ),
+          ),
+          Stack(children: [
             Align(
               alignment: Alignment.bottomCenter,
               child: Container(
@@ -34,7 +29,7 @@ class PaginaRCPMedicos extends StatelessWidget {
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
                   ),
-                  color: Colors.amber.withOpacity(0.6),
+                  color: Colors.amber.withOpacity(0.8),
                 ),
                 height: 200,
                 child: Column(
@@ -76,11 +71,90 @@ class PaginaRCPMedicos extends StatelessWidget {
                     icon: Icon(Icons.format_align_justify),
                     onPressed: () {},
                     label: Text("Formulário Completo")),
+                SizedBox(
+                  height: 120,
+                ),
+                Container(
+                  child: Center(
+                    child: Text(
+                      'C O B E R T U R A S',
+                      style: const TextStyle(
+                        color: Color.fromARGB(255, 255, 234, 169),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(height: 5),
+                Container(
+                  padding: EdgeInsets.only(right: 5, left: 5),
+                  width: double.infinity,
+                  height: 70,
+                  //color: Colors.amber.withOpacity(0.4),
+                  child: ListView(
+                    scrollDirection: Axis.horizontal,
+                    children: const [
+                      BotaoCoberturas(
+                        text: 'DESPESA DE DEFESA',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'ACORDO JUDICIAL OU EXTRA JUDICIAL',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'CONDENAÇÃO JUDICIAL',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'RESSARCIMENTOS',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'DANOS À REPUTAÇÃO',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'CUSTAS EMERGENCIAIS',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'CALÚNIA, INJÚRIA E DIFAMAÇÃO',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'PAGAMENTOS SUPLEMENTARES',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'HONORÁRIOS RETIDOS',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'OMISSÃO DE SOCORRO',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'INFECÇÃO HOSPITALAR',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'CHEFE DE EQUIPE OU DIRETOR MÉDICO',
+                      ),
+                      SizedBox(width: 10),
+                      BotaoCoberturas(
+                        text: 'COBERTURA EXTENSIVA PARA A PESSOA JURÍDICA',
+                      ),
+                      SizedBox(width: 10),
+                    ],
+                  ),
+                ),
               ],
             ),
-          ],
-        ),
-      ]),
+          ]),
+        ],
+      ),
     );
   }
 }

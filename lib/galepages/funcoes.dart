@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 
 abrirWhatsApp() async {
@@ -31,5 +32,42 @@ fazerLigacao() async {
     await launchUrlString(url);
   } else {
     throw 'Could not launch $url';
+  }
+}
+
+//?BOTOES DE COBERTURAS
+class BotaoCoberturas extends StatelessWidget {
+  const BotaoCoberturas({
+    Key? key,
+    required this.text,
+  }) : super(key: key);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Container(
+        padding: EdgeInsets.all(5),
+        height: 60,
+        width: 140,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: Colors.orange.withOpacity(0.9),
+          boxShadow: [
+            BoxShadow(
+                color: Colors.white, blurRadius: 10, offset: Offset(4, 4)),
+          ],
+        ),
+        child: Center(
+          child: Text(text.toUpperCase(),
+              textAlign: TextAlign.center,
+              style: const TextStyle(
+                fontSize: 13,
+                fontWeight: FontWeight.w600,
+              )),
+        ),
+      ),
+    );
   }
 }
