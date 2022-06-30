@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:primeiro_projeto/formulario/formulariosimples.dart';
 import 'package:primeiro_projeto/galepages/sendemailsmtp.dart';
 
 import '../../galepages/funcoes.dart';
@@ -59,11 +60,15 @@ class PaginaRCPMedicos extends StatelessWidget {
               children: [
                 ElevatedButton.icon(
                     icon: Icon(Icons.phone),
-                    onPressed: () {},
+                    onPressed: () {
+                      fazerLigacao();
+                    },
                     label: Text("Converse agora com um especialista")),
                 ElevatedButton.icon(
                     icon: Icon(Icons.whatsapp),
-                    onPressed: () {},
+                    onPressed: () {
+                      abreWhats();
+                    },
                     label: Text("Cote agora com um especialista")),
                 ElevatedButton.icon(
                     icon: Icon(Icons.format_align_left),
@@ -71,7 +76,7 @@ class PaginaRCPMedicos extends StatelessWidget {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => SendemailsmtpPage(),
+                          builder: (context) => FormularioPage(),
                         ),
                       );
                     },

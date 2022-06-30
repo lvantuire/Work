@@ -43,7 +43,7 @@ class _FormularioPage extends State<FormularioPage> {
 
       try {
         await send(message, smtpServer);
-        print('email enviado');
+        print('email enviado'); // fazer pop do formulario
       } on MailerException catch (e) {
         print(e);
       }
@@ -308,10 +308,10 @@ class _FormularioPage extends State<FormularioPage> {
                 ElevatedButton(
                     onPressed: () {
                       var formValid = formKey.currentState?.validate() ?? false;
-                      var message = 'Formulário Enviado';
+                      var message = 'Formulário Invalido';
                       if (formValid) {
                         enviaForm();
-                        message = 'Formulario Valido (Name: ${nameEC.text})';
+                        message = 'Formulario Enviado (Name: ${nameEC.text})';
                       }
 
                       ScaffoldMessenger.of(context)

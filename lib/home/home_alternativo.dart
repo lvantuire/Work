@@ -6,6 +6,7 @@ import 'package:primeiro_projeto/grupos/grupofamilia.dart';
 import 'package:primeiro_projeto/grupos/grupomedicos.dart';
 //import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 import '../galepages/funcoes.dart';
 
@@ -30,7 +31,7 @@ class HomePageAlternativa extends StatelessWidget {
           actions: [
             IconButton(
               onPressed: () {
-                abrirWhatsApp();
+                abreWhats();
               },
               icon: const Icon(
                 Icons.whatsapp,

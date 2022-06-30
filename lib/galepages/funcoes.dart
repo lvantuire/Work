@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
-abrirWhatsApp() async {
-  var whatsappUrl = "whatsapp://send?phone=+5516994442000&text=Olá,tudo bem ?";
+abrirWhatsAppWeb() async {
+  var whatsappweb =
+      "https://wa.me/+5516997776229/?text=Eu%20tenho%20interesse%20no%20seu%20carro%20à%20venda";
+
+  if (await canLaunchUrlString(whatsappweb)) {
+    await launchUrlString(whatsappweb);
+  }
+}
+
+abrirWhatAppMobile() async {
+  var whatsappUrl = "whatsapp://send?phone=+5516997776229&text=Olá,tudo bem ?";
 
   if (await canLaunchUrlString(whatsappUrl)) {
     await launchUrlString(whatsappUrl);
-  } else {
-    throw 'Could not launch $whatsappUrl';
   }
 }
 
@@ -101,5 +109,13 @@ class BotaoCoberturas extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+abreWhats() {
+  if (kIsWeb) {
+    abrirWhatsAppWeb();
+  } else {
+    abrirWhatAppMobile();
   }
 }

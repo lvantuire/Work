@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../formulario/formulario.dart';
+import '../formulario/formulariosimples.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class GrupoEmpresa extends StatelessWidget {
