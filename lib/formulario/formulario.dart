@@ -24,26 +24,52 @@ class _FormularioPage extends State<FormularioPage> {
     final melhorForm = melhorEC.text.toString();
     final detalhesForm = detalhesEC.text.toString();
 
-    final Uri params = Uri(
-      scheme: 'mailto',
-      path: 'contato@galeseguros.com.br',
-      query:
-          'subject=Contato inicial Cotacao Seguros para $nomeForm &body= $nomeForm, $emailForm, $telefoneForm, $melhorForm, $detalhesForm ',
-    );
-    String url = params.toString();
-    if (await canLaunchUrlString(url)) {
-      await launchUrlString(url);
-    } else {
-      print('Could not launch $url');
+    {
+      final email = 'cotacoes@yandex.com';
+      final password = 'xwhlsvueiveafqyp';
+      final nome = 'Cotacoes Gale';
+
+      final smtpServer = yandex(email, password);
+      print('carregou dados do smtpServer');
+
+      final message = Message()
+        ..from = Address(email, nome)
+        ..recipients = ['lvantuire@gmail.com']
+        ..subject = "Pedido de cotação de seguro para $nomeForm "
+        ..text =
+            'Nome: $nomeForm \n Email: $emailForm \n Telefone: $telefoneForm \n Melhor horario de contato $melhorForm\n Descrição: $detalhesForm';
+
+      print('carregou dados da mensagem vai tentar mandar agora pelo send');
+
+      try {
+        await send(message, smtpServer);
+        print('email enviado');
+      } on MailerException catch (e) {
+        print(e);
+      }
     }
   }
 
-  @override
-  void dispose() {
-    //*medoto descarta os controladores, precisa descartar para liberar memoria
-    nameEC.dispose();
-    super.dispose();
-  }
+  //   final Uri params = Uri(
+  //     scheme: 'mailto',
+  //     path: 'contato@galeseguros.com.br',
+  //     query:
+  //         'subject=Contato inicial Cotacao Seguros para $nomeForm &body= $nomeForm, $emailForm, $telefoneForm, $melhorForm, $detalhesForm ',
+  //   );
+  //   String url = params.toString();
+  //   if (await canLaunchUrlString(url)) {
+  //     await launchUrlString(url);
+  //   } else {
+  //     print('Could not launch $url');
+  //   }
+  // }
+
+  // @override
+  // void dispose() {
+  //   //*medoto descarta os controladores, precisa descartar para liberar memoria
+  //   nameEC.dispose();
+  //   super.dispose();
+  // }
 
   //String texto = '';
 
@@ -282,7 +308,7 @@ class _FormularioPage extends State<FormularioPage> {
                 ElevatedButton(
                     onPressed: () {
                       var formValid = formKey.currentState?.validate() ?? false;
-                      var message = 'Formulário Inválido';
+                      var message = 'Formulário Enviado';
                       if (formValid) {
                         enviaForm();
                         message = 'Formulario Valido (Name: ${nameEC.text})';
