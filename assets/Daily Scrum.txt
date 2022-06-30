@@ -1,0 +1,456 @@
+Daily Scrum 24/06/2022
+1 O que fiz ontem
+	descritivo das coberturasRCP Médicos Individualmente apos clique na listview
+
+2 O que vou fazer hoje
+	iniciar formulário completo do RCP Médicos
+	Resolver Whatapp que não abre na versão Web
+	Resolver SMPT para que não abra o email do cliente para envio de formulários
+	implementar os botoes nas novas funcionalidades de email whatapp e formulario via SMTP
+3 impedimentos
+	Nenhum
+
+Daily Scrum 23/06/2022
+1 O que fiz ontem
+	Implementar listview horizontal com SnackBar 
+
+2 O que vou fazer hoje
+	descritivo das coberturasRCP Médicos Individualmente apos clique na listview
+	iniciar formulário completo do RCP Médicos
+	Resolver Whatapp que não abre na versão Web
+	Resolver SMPT para que não abra o email do cliente para envio de formulários
+3 impedimentos
+	Nenhum
+
+
+Daily Scrum 22/06/2022
+1 O que fiz ontem
+	Inicio da Pagina RCP Médicos
+2 O que vou fazer hoje
+	Implementar listview horizontal com SnackBar e conteudo descritivo das coberturasRCP Médicos
+3 impedimentos
+	Velório da Vó Dolores
+
+
+Daily Scrum 20/06/2022
+
+O que vou fazer hoje
+	Flutter 
+		Lendo arquivo json do Assets
+		Stack
+		BottomNavigatorBar & IndexedStack
+		CircleAvatar
+		Trabalhando com cores
+		Material Banner
+
+Impedimentos
+	Nenhum
+
+
+
+
+
+Daily Scrum 01/06/2022
+
+O Que vou Fazer Hoje
+BCAMP - Imersão no Spring FrameWork com Spring Boot
+			Apresentação Inicial
+			Projto SpringBoot
+BCAMP - Desafio Intermediario Java
+BACMP - Conhecendo Spring Data JPA na Pratica com Java
+						
+
+O Que Fiz ontem
+BCamp - Introdução ao framework Spring Boot
+		FatJar/ UberJar
+		TRabalhando com Profiles e Configurações
+BCamp - Simplificando Projetos Java com o Spring Boot
+		SpringFrameWork
+		SpringBoot
+		Principais dependencias da Bliblioteca
+		Spring Boot Test
+
+Impedimentos
+Denis em Casa com Suspeita de Covid
+Revisão da Defesa Judicial que o Banco envio contra a ação trabalhista que entrei, apontar pontos desconexos para advogado
+
+
+	
+
+2 - O que vou fazer hoje
+
+Daily Scrum 28/05/2022
+
+Bcamp	Progr Orient a Objeto
+ok	Herança
+	Pacotes
+BCamp	Debuggin Java
+	Pilha
+	Debuggin Intellij
+	Debuggin Eclipse
+	
+
+2 - O que vou fazer hoje
+
+	
+
+Daily Scrum 27/05/2022
+Consegui colocar o app Web Gale no site do Git pra funcionar
+
+
+Bcamp	Programação Orientada a Objetos
+	Introdução
+	Porque Usar
+	Fundamentos
+	Estrutura Basica OO
+	Heranca Assossiacao 
+	
+
+2 - O que vou fazer hoje
+Bcamp	Progr Orient a Objeto
+	Herança
+	Pacotes
+BCamp	Debuggin Java
+	Pilha
+	Debuggin Intellij
+	Debuggin Eclipse
+	
+
+3 - Impedimentos
+compromissos já cumpridos na parte da manhã
+
+Daily Scrum 24/05/2022
+BCamp Desafio Intermediario Entregue de Java
+BCamp	Entendendo Metodos Java
+	Criação
+	Sobrecarga
+	Retornos
+	Logica Condicional e Fluxos Java
+		Operadores Relacionais
+		Operadores Logicos
+		Controles de Fluxo
+		Blocos
+Bcamp	Programação Orientada a Objetos
+	Introdução
+	Porque Usar
+	Fundamentos
+	Estrutura Basica OO
+	Heranca Assossiacao 
+	
+
+2 - O que vou fazer hoje
+	Sistema SMTP para o app Gale
+
+3 - Impedimentos
+	Entrega do IR
+	Visita surpresa da mãe
+
+
+
+
+
+Daily Scrum 24/05/2022
+1 - O que fiz ontem
+ok BCamp - Documentação Java
+ok BCamp - Mercado e Carreira Java
+ok BCamp - Dominando IDEs Java - Apresentação e Visão Geral
+ok BCamp - Ambiente de desenvolvimento Ubuntu
+
+
+
+2 - O que vou fazer hoje
+BCamp	Entendendo Metodos Java
+	Criação
+	Sobrecarga
+	Retornos
+	Logica Condicional e Fluxos Java
+		Operadores Relacionais
+		Operadores Logicos
+		Controles de Fluxo
+		Blocos
+
+3 -Impedimentos
+	Consultas na parte da tarde
+
+
+
+3 - Impedimentos
+Nenhum
+
+Daily Scrum 24/05/2022
+1 - O que fiz ontem
+okBCamp - Documentação Java
+okBCamp - Mercado e Carreira Java
+BCamp - Dominando IDEs Java - Apresentação e Visão Geral
+BCamp - Ambiente de desenvolvimento Ubuntu
+
+
+
+2 - O que vou fazer hoje
+BCamp - Documentação Java
+BCamp - Mercado e Carreira Java
+BCamp - Dominando IDEs Java - Apresentação e Visão Geral
+BCamp - Ambiente de desenvolvimento Ubuntu
+
+
+3 - Impedimentos
+Nenhum
+
+
+Daily Scrum 23/05/2022
+1 - O que fiz ontem
+ok Boot Camp - Introdu;'ao do ecossistema Java
+ok Bott Camp - Contextualização de usa Java 11
+Instalação do Intelij no Ubuntu e no Windows
+
+2 - O que vou fazer hoje
+BCamp - Documentação Java
+BCamp - Mercado e Carreira Java
+BCamp - Dominando IDEs Java - Apresentação e Visão Geral
+BCamp - Ambiente de desenvolvimento Ubuntu
+
+
+3 - Impedimentos
+Nenhum
+
+
+
+Daily Scrum 20/05/2022
+1 - O que fiz ontem
+quase concluir o desafio do 3o modulo
+
+2 - O que vou fazer hoje
+Entregar o desafio do 3 modulo
+Boot Camp - Introdu;'ao do ecossistema Java
+Bott Camp - Contextualização de usa Java 11
+BCamp - Documentação Java
+BCamp - Mercado e Carreira Java
+
+3 - Impedimentos
+Nenhum
+
+
+
+3 Impedimentos - Nenhum
+
+Daily Scrum 16/05/2022
+1 - O que fiz ontem
+ok Diminuir a altura dos campos dos formulários da Seguradora
+ok Por botões email whatsapp e telefone pra funcionar
+ok Colocar o botão enviar formulário para funcionar
+ok Acertar texto da primeira pagina com o Mascote
+ok Acertar texto da pagina de formulário com Mascote
+ok Separar o Codigo da Gale do COdigo de Estudo
+ok Fazer a primeira entrega do projeto
+
+2 - O que vou fazer hoje
+BootCamp Reatc - Trabalhando com States & Effects no ReactJs
+BootCamp - Finalizar modulo 3
+BootCamp - Introdução ao Ecossistema e Documentação Java
+BootCamp - Dominando IDEs Java
+
+3 Impedimentos - Nenhum
+
+
+
+
+
+
+Daily Scrum 13/05/2022
+1 - o que fiz ontem
+Flutter - SnackBar
+Flutter - Trabalhando com Formulários
+Apliquei formulários no projeto Gale
+
+
+
+2 - o que vou fazer hoje
+Diminuir a altura dos campos dos formulários da Seguradora
+Por botões email whatsapp e telefone pra funcionar
+Colocar o botão enviar formulário para funcionar
+Acertar texto da primeira pagina com o Mascote
+Acertar texto da pagina de formulário com Mascote
+Separar o Codigo da Gale do COdigo de Estudo
+Fazer a primeira entrega do projeto
+
+
+
+3- Impedimentos
+Sem Energia e sem internet no Momento em casa
+
+
+Daily Scrum 12/05/2022
+1 - o que fiz ontem
+BootCamp Carrefour - ReacjJS - Trabalhando com Estilos
+BootCamp Carrefour - ReacjJS - Introdução ao Redux
+BootCamp Carrefour - ReacjJS - Comunicação entre Aplicações
+BootCamp Carrefour - ReacjJS - Automação de Testes
+
+
+
+2 - o que vou fazer hoje
+BootCamp Carrefour - ReacjJS - Desmistificando Redux e React
+BootCamp Carrefour - Live as 14:00hs Mentoria Segurança Informação Introdução ao devsecops
+Flutter - SnackBar
+Flutter - Trabalhando com Formulários
+Flutter - Lendo Json
+Flutter - Stack (esse aqui é o que deixa colocar imagem e texto)
+Flutter - Aplicar as aulas no projeto da Seguradora
+
+3- Impedimentos
+Nenhum
+
+
+
+Daily Scrum 11/05/2022
+1 - o que fiz ontem
+ReactJS - Tive que fazer um curso no youtube antes,
+	    conteudo do BootCamp eu não estava entendendo
+ok BootCamp Carrefour - ReacjJS - Introdução
+ok BootCamp Carrefour - ReacjJS - Integrando WebPack
+ok BootCamp Carrefour - ReacjJS - Introdução conf ESlint
+ok BootCamp Carrefour - ReacjJS - Renderização
+ok BootCamp Carrefour - ReacjJS - Listas e Chaves
+ok BootCamp Carrefour - ReacjJS - Manipulando Eventos
+ok BootCamp Carrefour - ReacjJS - jeito React
+
+
+
+2 - o que vou fazer hoje
+BootCamp Carrefour - ReacjJS - Trabalhando com Estilos
+BootCamp Carrefour - ReacjJS - Introdução ao Redux
+BootCamp Carrefour - ReacjJS - Comunicação entre Aplicações
+BootCamp Carrefour - ReacjJS - Automação de Testes
+
+
+3 - Chegaram as peças do meu carro, pode ser que perca boa parte do dia atras do carro reserva e da "internação do meu carro"
+PS.: Não estou entendendo quase nada do ReactJS, estou avançando no curso e vou fazer um curso a parte no youtube para entender
+
+
+
+Daily Scrum 10/05/2022
+1 - o que fiz ontem
+BootCamp Carrefour - JS - Map, Filter e Reduce
+BootCamp Carrefour - JS - Manipulando a D.O.M. com JavaScript
+BootCamp Carrefour - JS - Resolvendo Desafios de Código em Javascript
+BootCamp Carrefour - JS - Modulo Finalizado Desafios Entregues
+
+2 - o que vou fazer hoje
+BootCamp Carrefour - ReacjJS - Introdução
+BootCamp Carrefour - ReacjJS - Integrando WebPack
+BootCamp Carrefour - ReacjJS - Introdução conf ESlint
+BootCamp Carrefour - ReacjJS - Renderização
+BootCamp Carrefour - ReacjJS - Listas e Chaves
+BootCamp Carrefour - ReacjJS - Manipulando Eventos
+BootCamp Carrefour - ReacjJS - jeito React
+
+3 - Consultas na parte da manhã
+
+
+
+
+Daily Scrum 03/05/2022
+1 - o que fiz ontem
+instalei o HD SDD  e perdi o dia atras da santander week
+
+
+2 - o que vou fazer hoje
+Dia de colocar BootCamp Carrefou em dia
+Fazer 2 aulas de flutter e 
+Mexer o projeto Gale Seguros
+
+3 - Nenhum
+
+Daily Scrum 03/05/2022
+1 - o que fiz ontem
+ok Manhã Boot Camp - Fim do BootStrap, Inicio do CloneNetflix
+Tarde - Flutter - 
+	  ok Identificando a plataforma e mostrando o componente correto
+	  ok- BuildContext
+	  ok- Theme (Customizando o seu Tema)	
+
+2 - o que vou fazer hoje
+Manhã	- Formatar Comp
+	- Boot Camp Carref
+Tarde - Aula Flutter
+	- Projeto Gale
+Noite - Dev Week Santander
+
+3 - Não sei quanto tempo vou levar para instalar/formatar e clonar o HD Novo
+
+
+
+2 - o que vou fazer hoje
+Manhã - BootCamp
+Tarde - Flutter - 
+	  - Identificando a plataforma e mostrando o componente correto
+	  - BuildContext
+	  - Theme (Customizando o seu Tema)	
+3 - nenhum
+Daily Scrum 02/05/2022
+1 - o que fiz ontem
+ok Projeto Gale
+
+
+2 - o que vou fazer hoje
+Manhã - BootCamp
+Tarde - Flutter - 
+	  - Identificando a plataforma e mostrando o componente correto
+	  - BuildContext
+	  - Theme (Customizando o seu Tema)	
+3 - nenhum
+
+Daily Scrum 29/04/2022
+1 - o que fiz ontem
+ok Flutter Dialog
+ok alterei o layout da Gale
+
+2 - o que vou fazer hoje
+	Pela Manhã seguir Gale
+	Seguir Boot Camp
+3 - nenhum
+
+
+
+
+Daily Scrum 22/04/2022
+
+1 O Que fiz Ontem 
+ok Flutter SingleChildScrollView e ListView
+ok BootCamp Projetos ágeis com SCRUM
+ok BootCamp Criando seu Primeiro Repositório no GitHub Para Compartilhar Seu Progresso
+ok BootCamp Fechar Módulo 1
+
+2 O que vou fazer hoje
+Hoje quero ficar por conta do projeto da seguradora para ver o que consigo fazer com o que já aprendi do flutter
+
+3
+Voltando para São Carlos hoje, 
+
+
+
+Daily Scrum
+
+1 O Que fiz Ontem 
+Pseudo Codigo - BootCamp
+Git - BootCamp
+
+2 O que vou fazer hoje
+Cadastro Git Lab
+Montar e subir no Git a APP Bar da Seguradora
+Flutter Botões e Rotação de Texto
+Flutter SingleChildScrollView e ListView
+BootCamp GitHub
+BootCamp Projetos ágeis com SCRUM
+BootCamp Criando seu Primeiro Repositório no GitHub Para Compartilhar Seu Progresso
+BootCamp Fechar Módulo 1
+
+
+3
+Nenhum
+
+
+
+
+
+

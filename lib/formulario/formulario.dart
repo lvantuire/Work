@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 //import 'package:url_launcher/url_launcher.dart';
 import 'package:url_launcher/url_launcher_string.dart';
+import 'package:mailer/mailer.dart';
+import 'package:mailer/smtp_server.dart';
 
 class FormularioPage extends StatefulWidget {
   @override

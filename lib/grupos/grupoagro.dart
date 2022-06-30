@@ -94,7 +94,7 @@ class GrupoAgro extends StatelessWidget {
               color: Color.fromARGB(255, 0, 72, 131),
             ),
             label: Text(
-              'Seguro da Platação',
+              'Seguro da Plantação',
               style: TextStyle(color: Color.fromARGB(255, 0, 72, 131)),
             ),
             style: ElevatedButton.styleFrom(

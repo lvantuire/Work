@@ -40,9 +40,11 @@ class BotaoCoberturas extends StatelessWidget {
   const BotaoCoberturas({
     Key? key,
     required this.text,
+    required this.descricaoCobertura,
   }) : super(key: key);
 
   final String text;
+  final String descricaoCobertura;
 
   @override
   Widget build(BuildContext context) {
@@ -56,16 +58,46 @@ class BotaoCoberturas extends StatelessWidget {
           color: Colors.orange.withOpacity(0.9),
           boxShadow: [
             BoxShadow(
-                color: Colors.white, blurRadius: 10, offset: Offset(4, 4)),
+              color: Colors.white,
+              blurRadius: 10,
+              offset: Offset(4, 4),
+            ),
           ],
         ),
         child: Center(
-          child: Text(text.toUpperCase(),
-              textAlign: TextAlign.center,
-              style: const TextStyle(
-                fontSize: 13,
-                fontWeight: FontWeight.w600,
-              )),
+          child: InkWell(
+            borderRadius: BorderRadius.circular(50),
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (context) {
+                  return Center(
+                    child: SimpleDialog(
+                      backgroundColor: Colors.amber.withOpacity(0.8),
+                      title: Text(
+                        text,
+                        textAlign: TextAlign.center,
+                      ),
+                      contentPadding: EdgeInsets.all(10),
+                      children: [
+                        Text(descricaoCobertura),
+                      ],
+                    ),
+                  );
+                },
+              );
+            },
+            child: Center(
+              child: Text(
+                text.toUpperCase(),
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 13,
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
