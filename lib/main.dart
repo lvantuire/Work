@@ -5,6 +5,7 @@ import 'package:primeiro_projeto/images/images.dart';
 import 'package:primeiro_projeto/pages/botoes_rotacao_texto/botoes_rotacoes_texto.dart';
 import 'package:primeiro_projeto/pages/cidades/cidades_page.dart';
 import 'package:primeiro_projeto/pages/circle_avatar/circle_avatar_page.dart';
+import 'package:primeiro_projeto/pages/colors/colors_page.dart';
 import 'package:primeiro_projeto/pages/contanier/container_page.dart';
 import 'package:primeiro_projeto/home/home_page.dart';
 import 'package:primeiro_projeto/pages/dialogs_page/dialogs_page.dart';
@@ -70,6 +71,7 @@ class MyApp extends StatelessWidget {
         '/sendemailsmtp': (_) => Sendemailsmtp(),
         '/bottomnavigator': (_) => BottomNavigatorBarPage(),
         '/circleavatar': (_) => CircleAvatarPage(),
+        '/colorspage': (_) => ColorsPage(),
       },
     );
   }

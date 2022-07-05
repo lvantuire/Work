@@ -21,6 +21,7 @@ enum PopupMenuPages {
   sendemailsmtp,
   bottomnavigator,
   circleavatar,
+  colorspage,
 }
 
 class HomePage extends StatelessWidget {
@@ -140,6 +141,9 @@ class HomePage extends StatelessWidget {
                   case PopupMenuPages.circleavatar:
                     Navigator.of(context).pushNamed('/circleavatar');
                     break;
+                  case PopupMenuPages.colorspage:
+                    Navigator.of(context).pushNamed('/colorspage');
+                    break;
                 }
               },
 
@@ -147,6 +151,10 @@ class HomePage extends StatelessWidget {
 
               itemBuilder: (BuildContext context) {
                 return <PopupMenuItem<PopupMenuPages>>[
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.colorspage,
+                    child: Text('Cores'),
+                  ),
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.bottomnavigator,
                     child: Text('Bottomnavigatorbar'),
