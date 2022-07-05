@@ -17,6 +17,9 @@ enum PopupMenuPages {
   stacks_page,
   stacks2,
   cidades,
+  dialogs,
+  sendemailsmtp,
+  bottomnavigator,
 }
 
 class HomePage extends StatelessWidget {
@@ -72,6 +75,9 @@ class HomePage extends StatelessWidget {
               tooltip: 'Selecione uma opção do Menu',
               onSelected: (PopupMenuPages valueSelected) {
                 switch (valueSelected) {
+                  case PopupMenuPages.home_alternativa:
+                    Navigator.of(context).pushNamed('/home_alternativa');
+                    break;
                   case PopupMenuPages.container:
                     Navigator.of(context).pushNamed('/container');
                     break;
@@ -103,9 +109,6 @@ class HomePage extends StatelessWidget {
                   case PopupMenuPages.list_view:
                     Navigator.of(context).pushNamed('/list_view');
                     break;
-                  case PopupMenuPages.home_alternativa:
-                    Navigator.of(context).pushNamed('/home_alternativa');
-                    break;
                   case PopupMenuPages.snackbar_page:
                     Navigator.of(context).pushNamed('/snackbar_page');
                     break;
@@ -124,6 +127,15 @@ class HomePage extends StatelessWidget {
                   case PopupMenuPages.cidades:
                     Navigator.of(context).pushNamed('/cidades');
                     break;
+                  case PopupMenuPages.dialogs:
+                    Navigator.of(context).pushNamed('/dialogs');
+                    break;
+                  case PopupMenuPages.sendemailsmtp:
+                    Navigator.of(context).pushNamed('/sendemailsmtp');
+                    break;
+                  case PopupMenuPages.bottomnavigator:
+                    Navigator.of(context).pushNamed('/bottomnavigator');
+                    break;
                 }
               },
 
@@ -131,6 +143,22 @@ class HomePage extends StatelessWidget {
 
               itemBuilder: (BuildContext context) {
                 return <PopupMenuItem<PopupMenuPages>>[
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.bottomnavigator,
+                    child: Text('Bottomnavigatorbar'),
+                  ),
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.home_alternativa,
+                    child: Text('Home Alternativa'),
+                  ),
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.sendemailsmtp,
+                    child: Text('SendEmail SMPT'),
+                  ),
+                  const PopupMenuItem<PopupMenuPages>(
+                    value: PopupMenuPages.dialogs,
+                    child: Text('DialogsBoxs'),
+                  ),
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.cidades,
                     child: Text('JsonCidades'),
@@ -178,10 +206,6 @@ class HomePage extends StatelessWidget {
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.list_view,
                     child: Text('List View'),
-                  ),
-                  const PopupMenuItem<PopupMenuPages>(
-                    value: PopupMenuPages.home_alternativa,
-                    child: Text('Home Alternativa'),
                   ),
                   const PopupMenuItem<PopupMenuPages>(
                     value: PopupMenuPages.snackbar_page,
