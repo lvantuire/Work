@@ -6,22 +6,21 @@ import 'package:primeiro_projeto/galepages/sendemailsmtp.dart';
 import '../../galepages/funcoes.dart';
 import '../../galepages/sendemailsmtp.dart';
 
-class PaginaRCPMedicos extends StatelessWidget {
-  const PaginaRCPMedicos({Key? key}) : super(key: key);
+class PaginaRCPProfSaude extends StatelessWidget {
+  const PaginaRCPProfSaude({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('RCP Médicos'),
+        title: const Text('RCP Profissionais da Saúde'),
       ),
       body: Stack(
         children: [
           Container(
             decoration: const BoxDecoration(
               image: DecorationImage(
-                  image: AssetImage('assets/rcpmedicos.jpg'),
-                  fit: BoxFit.cover),
+                  image: AssetImage('assets/profsaude.jpg'), fit: BoxFit.cover),
             ),
           ),
           Stack(children: [
@@ -33,21 +32,21 @@ class PaginaRCPMedicos extends StatelessWidget {
                     topLeft: Radius.circular(30),
                     topRight: Radius.circular(30),
                   ),
-                  color: Colors.amber.withOpacity(0.8),
+                  color: Colors.lightBlue.withOpacity(0.8),
                 ),
                 height: 200,
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10),
-                      child: Text('RCP Médicos',
+                      child: Text('RCP Profissionais da Saúde',
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold)),
                     ),
                     Padding(
                       padding: const EdgeInsets.all(16.0),
                       child: Text(
-                          'O Seguro de Responsabilidade Civil Profissional Médico, protege estes profissionais que, de forma involuntária, causaram danos a terceiros no exercício da profissão. Na prática, garante o reembolso a eventuais indenizações por danos morais, corporais ou materiais causados sem intenção.',
+                          'O Seguro de Responsabilidade Civil Profissional da Saúde, é de uma modalidade que tem a finalidade de proteger o segurado contra processos judiciais por danos materiais e/ou corporais a terceiros causados de forma involuntária na sua atividade profissional',
                           style: TextStyle(
                               fontSize: 15, fontWeight: FontWeight.bold)),
                     ),
@@ -162,26 +161,6 @@ class PaginaRCPMedicos extends StatelessWidget {
                           text: 'HONORÁRIOS RETIDOS',
                           descricaoCobertura:
                               'Se o terceiro entender que o serviço prestado pelo Segurado causou algum dano e se recusar a pagar os honorários devidos ou caso o mesmo desista acionar o seguro na justiça e o segurado concorde em isentá-lo dos honorários devidos, o seguro pagará o prejuízo pelo não recebimento dos honorários.'),
-                      SizedBox(width: 10),
-                      BotaoCoberturas(
-                          text: 'OMISSÃO DE SOCORRO',
-                          descricaoCobertura:
-                              'Caso o Segurado seja acusado de ter praticado Omissão de Socorro, nos termos descritos no código penal brasileiro e desde que exclusivamente relacionado a prestação de seu serviço profissional, o presente seguro cobrirá todas as despesas de defesa do segurado para que o mesmo prove sua inocência.'),
-                      SizedBox(width: 10),
-                      BotaoCoberturas(
-                          text: 'INFECÇÃO HOSPITALAR',
-                          descricaoCobertura:
-                              'Caso o segurado seja envolvido em demanda judicial decorrente alegada Infecção Hospitalar, nos termos das definições pela Agência Nacional de Vigilância Sanitária – ANVISA, contraída por um paciente sob responsabilidade do segurado, o presente seguro cobrirá as despesas de defesa do segurado e eventuais condenações que sejam imputadas ao segurado.'),
-                      SizedBox(width: 10),
-                      BotaoCoberturas(
-                          text: 'CHEFE DE EQUIPE OU DIRETOR MÉDICO',
-                          descricaoCobertura:
-                              'Caso o segurado sofra uma reclamação por alegado ato médico que tenha causado dano, pela sua condição de chefe de equipe ou diretor médico, diretor clínico ou posição similar, o presente seguro cobrirá o segurado, nos termos dos riscos cobertos da presente apólice, mesmo que o ato médico tenha sido praticado por outro profissional sob responsabilidade do segurado.'),
-                      SizedBox(width: 10),
-                      BotaoCoberturas(
-                          text: 'COBERTURA EXTENSIVA PARA A PESSOA JURÍDICA',
-                          descricaoCobertura:
-                              'Caso o segurado possua uma empresa aberta para o desempenho de suas atividades profissionais e esta empresa sofra uma reclamação por alegado ato médico praticado pelo segurado, o seguro cobrirá também as reclamações apresentadas contra a pessoa jurídica.'),
                       SizedBox(width: 10),
                     ],
                   ),

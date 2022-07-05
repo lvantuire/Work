@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:primeiro_projeto/formulario/formulariosimples.dart';
+import 'package:primeiro_projeto/formularios/formulario_simples.dart';
 import 'package:primeiro_projeto/grupos/SegsGrupoMedicos/PaginaRCPMedicos.dart';
+import 'package:primeiro_projeto/grupos/SegsGrupoMedicos/PaginaRCPProfSaude.dart';
 
 class GrupoMedicos extends StatelessWidget {
   @override
@@ -88,7 +89,7 @@ class GrupoMedicos extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => FormularioPage(),
+                  builder: (context) => PaginaRCPProfSaude(),
                 ),
               );
             },
