@@ -12,6 +12,7 @@ import 'package:primeiro_projeto/pages/dialogs_page/dialogs_page.dart';
 import 'package:primeiro_projeto/pages/forms/forms_page.dart';
 import 'package:primeiro_projeto/pages/forms/forms_page2.dart';
 import 'package:primeiro_projeto/pages/galeseguros/galeseguros.dart';
+import 'package:primeiro_projeto/pages/material_banner_page/material_banner_page.dart';
 import 'package:primeiro_projeto/pages/mediaquery/mediaquery.dart';
 import 'package:primeiro_projeto/pages/rows_columns/rows_columns_page.dart';
 import 'package:device_preview/device_preview.dart';
@@ -72,6 +73,7 @@ class MyApp extends StatelessWidget {
         '/bottomnavigator': (_) => BottomNavigatorBarPage(),
         '/circleavatar': (_) => CircleAvatarPage(),
         '/colorspage': (_) => ColorsPage(),
+        '/materialbanner': (_) => MaterialBannerPage(),
       },
     );
   }
